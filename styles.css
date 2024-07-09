@@ -15,7 +15,7 @@ body {
   display: grid;
   min-height: 100vh;
   grid: 1fr 1fr 7fr / 2fr 8fr;
-  font-family: "robotobold", sans-serif;
+  font-family: sans-serif;
   padding: 0px 200px;
   /* align-items: start; */
 }
@@ -162,6 +162,7 @@ ul.sidebar-list + ul.sidebar-list {
   border-radius: 27px;
   background-color: #24a0ed;
   color: white;
+  font-weight: bold;
   outline: none;
   border: none;
   font: inherit;
