@@ -1,5 +1,9 @@
 # admin-dashboard-TOP
 
+Not fully responsive.
+This project is meant to demonstrate understanding of CSS Grid.
+
+
 Source for SVGs: https://pictogrammers.com/library/mdi/
 
 See project guide: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard#introduction
