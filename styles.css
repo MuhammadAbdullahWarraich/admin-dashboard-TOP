@@ -1,7 +1,8 @@
 body {
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
   grid: 1fr 1fr 7fr / 2fr 8fr;
+  /* align-items: start; */
 }
 body > div {
   overflow: auto;
