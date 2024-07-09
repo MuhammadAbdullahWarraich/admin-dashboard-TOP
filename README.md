@@ -1,6 +1,6 @@
 # admin-dashboard-TOP
 
-Not fully responsive.
+Not responsive.
 This project is meant to demonstrate understanding of CSS Grid.
 
 
