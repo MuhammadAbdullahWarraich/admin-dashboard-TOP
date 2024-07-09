@@ -1,0 +1,20 @@
+body {
+  display: grid;
+  height: 100vh;
+  grid: 1fr 1fr 7fr / 2fr 8fr;
+}
+body > div {
+  overflow: auto;
+}
+#header {
+  background-color: red;
+  grid-area: 1/2/3/-1;
+}
+#sidebar {
+  background-color: green;
+  grid-area: 1/1/-1/2;
+}
+#main-content {
+  background-color: blue;
+  grid-area: 3/2/-1/-1;
+}
