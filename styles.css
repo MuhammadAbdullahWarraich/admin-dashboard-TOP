@@ -115,7 +115,7 @@ ul.sidebar-list + ul.sidebar-list {
   font-size: 1.2rem;
   align-items: center;
 }
-.admin-profile > div.bkg-img {
+.bkg-img {
   --profile-pic-size: 40px;
   display: block;
   outline: 1px solid black;
@@ -200,12 +200,14 @@ ul.sidebar-list > li > a:hover {
   border-left: 8px solid orange;
 }
 #announcements-cards,
+#trending-cards,
 .card {
   padding: 30px;
   border-radius: 8px;
   background-color: white;
 }
-#announcements {
+#announcements,
+#trending {
   margin: 20px;
   display: grid;
   grid-template-rows: 50px auto;
@@ -222,4 +224,21 @@ ul.sidebar-list > li > a:hover {
 }
 .announcements-card:first-child {
   padding-top: 0px;
+}
+.trending-card > a {
+  display: grid;
+  display: grid;
+  grid: 1fr 1fr / 1fr 4fr;
+  align-items: center;
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+.trending-card > a > .bkg-img {
+  grid-area: 1/1/-1/2;
+  /* justify-self: center; */
+}
+#trending-cards {
+  display: grid;
+  gap: 10px;
 }
