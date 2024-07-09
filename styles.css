@@ -177,3 +177,28 @@ ul.sidebar-list > li > a:hover {
 #button-list {
   font-family: "robotobold", sans-serif;
 }
+/* there is styling only for #main-content below this line */
+#main-content {
+  display: grid;
+  height: 100%;
+  grid: 1fr 1fr / 3fr 1fr;
+  align-items: stretch;
+  background-color: lightgrey;
+}
+#your-projects {
+  grid-area: 1/1/-1/2;
+  margin: 20px;
+  display: grid;
+  grid-template-rows: 50px auto;
+}
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.card {
+  background-color: white;
+  padding: 30px;
+  border-left: 8px solid orange;
+  border-radius: 8px;
+}
