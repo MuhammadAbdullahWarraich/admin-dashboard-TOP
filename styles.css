@@ -181,7 +181,7 @@ ul.sidebar-list > li > a:hover {
 #main-content {
   display: grid;
   height: 100%;
-  grid: 1fr 1fr / 3fr 1fr;
+  grid: 1fr 1fr / 7fr 3fr;
   align-items: stretch;
   background-color: lightgrey;
 }
@@ -197,8 +197,29 @@ ul.sidebar-list > li > a:hover {
   gap: 20px;
 }
 .card {
-  background-color: white;
-  padding: 30px;
   border-left: 8px solid orange;
+}
+#announcements-cards,
+.card {
+  padding: 30px;
   border-radius: 8px;
+  background-color: white;
+}
+#announcements {
+  margin: 20px;
+  display: grid;
+  grid-template-rows: 50px auto;
+}
+.announcements-card {
+  padding: 10px 0px;
+  border-bottom: 1px solid gray;
+}
+.announcements-card > p {
+  font-size: 0.9rem;
+}
+.announcements-card:last-child {
+  border-bottom: none;
+}
+.announcements-card:first-child {
+  padding-top: 0px;
 }
