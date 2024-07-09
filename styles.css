@@ -17,7 +17,7 @@ body {
   grid: 1fr 1fr 7fr / 2fr 8fr;
   font-family: sans-serif;
   padding: 0px 200px;
-  /* align-items: start; */
+  align-items: start;
 }
 body > div {
   overflow: auto;
@@ -26,7 +26,10 @@ body > div {
   grid-area: 1/2/3/-1;
 }
 #sidebar {
-  /* line-height: 1; */
+  /* align-self: stretch; */ /* your choice: either this declaration or the two below this */
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
   background-color: #24a0ed;
   color: white;
   grid-area: 1/1/-1/2;
@@ -78,6 +81,7 @@ ul.sidebar-list + ul.sidebar-list {
   grid-auto-flow: column;
   align-content: center;
   grid-template-columns: 6fr 1fr 2fr;
+  gap: 20px;
 }
 #header1 > form button[type="submit"] {
   background: none;
@@ -241,4 +245,11 @@ ul.sidebar-list > li > a:hover {
 #trending-cards {
   display: grid;
   gap: 10px;
+}
+a#notification-bell-off {
+  justify-self: end;
+}
+a#notification-bell-on {
+  display: none;
+  justify-self: center;
 }
