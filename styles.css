@@ -92,15 +92,17 @@ ul.sidebar-list + ul.sidebar-list {
   display: flex;
   gap: 15px;
   align-items: center;
-  height: 60px;
+  height: 80px;
 }
 #header1 > form > input[type="search"] {
   flex: 1;
   border-radius: 35px;
   outline: none;
+  border: none;
+  background-color: lightgrey;
 }
 #header1 > form > input[type="search"]:focus {
-  border: 1px solid blue;
+  border: 1px solid lightblue;
   box-shadow: 0 0 3px currentColor;
 }
 #header1 > form > input[type="search"]:hover {
@@ -133,6 +135,7 @@ ul.sidebar-list + ul.sidebar-list {
   align-items: center;
   justify-content: space-between;
   padding: 0px 30px;
+  padding-bottom: 20px;
 }
 #admin-profile-main {
   display: grid;
@@ -148,4 +151,18 @@ ul.sidebar-list + ul.sidebar-list {
 }
 #admin-profile-main > div:nth-child(1) {
   align-self: end;
+}
+#button-list {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 25px;
+}
+#button-list > button {
+  padding: 8px 25px;
+  border-radius: 27px;
+  background-color: #24a0ed;
+  color: white;
+  outline: none;
+  border: none;
+  font: inherit;
 }
