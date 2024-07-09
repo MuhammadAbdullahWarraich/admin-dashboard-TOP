@@ -1,7 +1,14 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
   display: grid;
   min-height: 100vh;
   grid: 1fr 1fr 7fr / 2fr 8fr;
+  font-family: sans-serif;
+  padding: 0px 200px;
   /* align-items: start; */
 }
 body > div {
