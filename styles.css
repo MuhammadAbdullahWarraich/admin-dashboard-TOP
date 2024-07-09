@@ -166,4 +166,14 @@ ul.sidebar-list + ul.sidebar-list {
   outline: none;
   border: none;
   font: inherit;
+  transition: transform 0.2s;
+}
+#button-list > button:hover,
+ul.sidebar-list > li > a:hover {
+  transform: scale(1.1);
+}
+#sidebar,
+.admin-profile,
+#button-list {
+  font-family: "robotobold", sans-serif;
 }
