@@ -12,10 +12,43 @@ body > div {
   grid-area: 1/2/3/-1;
 }
 #sidebar {
-  background-color: green;
+  background-color: #24a0ed;
+  color: white;
   grid-area: 1/1/-1/2;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 #main-content {
   background-color: blue;
   grid-area: 3/2/-1/-1;
+}
+#logo {
+  display: grid;
+  align-content: center;
+  grid-auto-flow: column;
+  font-size: 40px;
+  justify-content: center;
+}
+ul.sidebar-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+ul.sidebar-list a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+ul.sidebar-list > li > a {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+ul.sidebar-list + ul.sidebar-list {
+  margin-top: 20px;
 }
